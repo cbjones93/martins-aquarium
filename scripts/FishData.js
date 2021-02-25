@@ -1,9 +1,3 @@
-/*
- *  To get you started, here's some properties of Bart.
- *  You need to add more properties to complete this
- *  representation as an object. Then add all the other
- *  fish to the collection.
- */
 const fishCollection = [
 	{
 		saltWater: true,
@@ -88,7 +82,7 @@ const fishCollection = [
 		image: "bluefish.jpg"
 	},
 	{
-		saltWater: "false",
+		saltWater: false,
 		harvestLocation: "Cumberland River",
 		diet: "anything",
 		name: "Whiskers",
@@ -207,14 +201,7 @@ const fishCollection = [
 		inches: 7,
 		image: "bluefish.jpg"
 	},
-	{
-         saltWater: true,
-          harvestLocation: "Atlantic, Pacific, and southern sea",
-           diet: "smaller fish", 
-           name: "bluefin tuna", 
-           species: "Thunnus thynnus",
-           inches: 84,
-            image: "bluefin.pg" },
+	{ saltWater: true, harvestLocation: "Atlantic, Pacific, and southern sea", diet: "smaller fish", name: "bluefin tuna", species: "Thunnus thynnus", inches: 84, image: "bluefin.pg" },
 	{
 		saltwater: true,
 		harvestLocation: "Baltic Sea",
@@ -226,6 +213,32 @@ const fishCollection = [
 	}
 ];
 
-export const getFish= () =>{
-return fishCollection
+export const sampleFishObject = {
+	saltwater: true,
+	harvestLocation: "",
+	diet: "",
+	name: "",
+	species: "",
+	inches: 0,
+	image: ""
+}
+
+export const myName = "Brenda";
+
+export const getFish = () => {
+	//do some math
+	//sort out the fish
+	//and then return
+	return fishCollection;
+}
+
+export const namedFish = (whatIsTheName) => {
+	// "Hello " + whatIsTheName
+	return `Hello ${whatIsTheName}`;
+}
+
+export const getFish3 = () => fishCollection;
+
+export function getFish2(){
+	return fishCollection;
 }
